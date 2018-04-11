@@ -3,7 +3,7 @@
   <%=f.text_field :name%>
 
   <%=f.fields_for :categories%>
-    <%=collection_check_boxes
+    <%=collection_check_boxes :category, :category_ids, Catgeory.all, :id, :name
 
   <%end%>
 
