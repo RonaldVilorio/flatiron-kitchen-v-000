@@ -3,7 +3,7 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new
   end
   def create
-    @
+    @recipe = Recipe.create(recipe_params(:name))
   end
   private
     def recipe_params(name)
